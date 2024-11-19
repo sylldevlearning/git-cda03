@@ -1,0 +1,161 @@
+mkdir touch  New-Item cd ls -Force ls -a
+<!-- 1 Créer un nouveau dépôt Git en utilisant la commande git init et creez un fichier exercicesGit.html -->
+accéder au répertoire où vous souhaitez créer le dépôt. Ensuite, exécutez la
+commande git init pour initialiser un nouveau dépôt Git dans ce répertoire: cd
+mon_projet git init
+
+<!-- 2 Vérifier l'état du dépôt en utilisant la commande git status. -->
+git status affiche les fichiers modifiés, ajoutés et supprimés, ainsi que la
+branche active et d'autres informations sur l'état du dépôt: ***Untracked files:
+<!-- index.html est un fichier non suivi (untracked) par Git***** -->
+(use "git add
+<file
+  >..." to include in what will be committed) index.html
+
+  <!-- 3 Ajouter un fichier au dépôt en utilisant la commande git add. -->
+  " git add exercicesGit.html " ou " git add . " " git reset exercicesGit.html "
+  pour desindexer
+
+  <!-- 4 Effectuer un commit en utilisant la commande git commit.ça enregistre l'état actuel des fichiers dans un dépot local -->
+
+  <!-- 5 Ajouter un deuxième fichier deuxièmeFichier.html et effectuer un commit. -->
+  creez un fichier deuxièmeFichier.html
+  <!--  -->
+  git status
+  <!--  -->
+  git diff (pour voir les changements q pour quitter programme less)
+  <!--  -->
+  git add deuxièmeFichier.html git commit -m "deuxièmeFichier.html"
+
+  <!-- 5 Ajouter un troisième fichier et effectuer un commit. -->
+
+  creez un fichier troisiemeFichier.txt git status git add troisiemeFichier.txt
+  git commit -m "troisiemeFichier.txt"
+
+  <!-- 6 Vérifier l'historique des commits en utilisant la commande git log. ou git --no-pager log
+ -->
+
+  git log. affiche la liste des commits, avec leur message, leur auteur, leur
+  date et leur identifiant de commit: q pour sortir
+  <!-- commit 8bf7005f1b67517e8ac6a4e1d8c903a36567aab2 : Hash (SHA-1) unique identifiant le commit.
+      HEAD -> master : Le commit actuel sur la branche master.
+      Author: saloum saloum.sylla@outlook.fr : L'auteur du commit.
+      Date: Wed Oct 23 20:49:20 2024 +0200 : Date et heure du commit.
+      Message: deuxièmeFichier.html : Indique une modification liée à ce fichier. -->
+  <!-- ****************  -->
+
+  La commande git show te permet d'afficher les détails 
+  d'un commit spécifique,
+  d'un tag, ou d'un autre objet Git, en passant soit un hash SHA-1, soit un tag
+  comme argument. exemple: git show master
+  <!-- ** -->
+  git checkout cha-1 ou tag sert à naviguer vers un commit spécifique en fonction de son
+  identifiant
+  <!-- ***************** -->
+  Si tu veux ajouter un tag à un commit spécifique tu dois etre dessus ou
+  inclure le hash SHA-1 du commit : git tag nom-du-tag / git tag -a nom-du-tag
+  -m "Message du tag"/ git tag --delete nom-du-tag/ git tag
+
+  <!-- ***************** -->
+  <!-- 7 Créer une nouvelle branche en utilisant la commande git branch. -->
+  Commencez par un préfixe pour indiquer le type de branche git branch
+  cours-git/premiere-branche
+
+  <!-- 8 Basculer sur la nouvelle branche en utilisant la commande git checkout. -->
+  git checkout cours-git/premiere-branche
+
+  <!-- 9 Modifier un fichier et effectuer un commit sur la nouvelle branche. -->
+  git status git add mon_fichier_modifie.txt git commit -m "Modification sur la
+  nouvelle branche"
+
+  <!-- 10 Basculer sur la branche principale en utilisant la commande git checkout. -->
+  git checkout + nom de la branche principale: git checkout master
+
+  <!-- 11 Fusionner la branche de travail dans la branche principale en utilisant la commande git merge. -->
+  git merge suivie du nom de la branche à fusionner: git merge
+  cours-git/premiereB
+
+  <!-- 12 Modifier un fichier sur la branche principale et effectuer un commit. -->
+  utilisez les mêmes commandes que pour le premier fichier: git add
+  exercicesGitReponses.html git commit -m "Modification
+  d'exercicesGitReponses.html sur master"
+
+  <!-- 13 Supprimer un fichier en utilisant la commande git rm. -->
+  git rm quatre.pdf git commit -m "Suppression quatre.pdf"
+
+  <!-- 14 Renommer un fichier en utilisant la commande git mv. -->
+  exécutez la commande git mv suivie du nom du fichier existant et du nouveau
+  nom : git mv exercices.html exercicesVide.html git commit -m "Renommage
+  d'exercices.html en exercicesVide.html"
+
+  <!-- 15 Cloner un dépôt Git distant en utilisant la commande git clone suivie de l'URL du dépôt -->
+  vim Pour cloner un dépôt Git distant en utilisant la commande git clone,
+  exécutez la commande git clone suivie de l'URL du dépôt distant: git clone
+  https://github.com/saloumCDA03/pour--cloner.git
+
+  <!-- ***************************** -->
+  Un token est une clé d'authentification utilisée pour sécuriser l'accès à un
+  dépôt https://github.com/settings/apps cocher repo
+  <!-- ***************************** -->
+  git remote -v te permet de voir les dépôts distants (remotes) configurés pour
+  ton projet Git, ainsi que les URL associées à ces dépôts. Le flag -v (verbose)
+  affiche ces informations de manière détaillée, en indiquant les URLs pour les
+  opérations de fetch (récupération) et push (envoi).
+  <!-- ++++++++++++++++++++++ -->
+  *******git remote add origin https://github.com/saloumCDA03/cours-git.git
+  ajoute un dépôt distant (remote) à ton projet Git local. Cela te permet de
+  lier ton dépôt local à un dépôt distant sur GitHub . // git remote -v
+  <!-- ++++++++++++++++++++++ -->
+  git push -u origin master Envoie (pousse) les commits de ta branche locale
+  vers la branche correspondante du dépôt distant (dans ce cas, vers origin, le
+  dépôt distant par défaut) git push origin --tags pour ajouter un tag au depot
+  distant
+  <!-- ++++++++++++++++++++++ -->
+  <!-- 16 Mettre à jour le dépôt local avec les modifications du dépôt distant en utilisant la commande git pull. -->
+  <!--  -->
+  git status
+  <!-- / -->git pull origin master
+  <!-- origin est le nom par défaut du dépôt distant.
+master est le nom de la branche que tu veux mettre à jour (remplace-le par le nom de ta branche si ce n'est pas master). -->
+<!-- ************************************************************************************ -->
+<!-- ************************************************************************************ -->
+<!-- ************************************************************************************ -->
+<!-- ************************************************************************************ -->
+<!-- ************************************************************************************ -->
+<!-- ************************************************************************************ -->
+<!-- ************************************************************************************ -->
+<!-- ************************************************************************************ -->
+<!-- ************************************************************************************ -->
+ 
+
+    <!-- 19 envoyer les modifications locales au dépôt distant en utilisant la commande git push -->
+    git push suivie du nom de la branche à pousser: git push origin master si
+    Please make sure you have the correct access rights and the repository
+    exists. creez un repository
+
+    <!-- 20 Ignorer un fichier en créant un fichier .gitignore contenant le nom du fichier ou du dossier à ignorer. -->
+    git revert HEAD créez un nouveau fichier .gitignore dans le répertoire
+    racine du dépôt et ajoutez le nom du fichier ou du dossier à ignorer.
+<!-- git branch premiere-branche  
+ crée une nouvelle branche nommée premiere-branche dans ton dépôt Git local. Cependant, cette commande ne change pas la branche sur laquelle tu es actuellement. Elle crée simplement une nouvelle branche à partir du commit où tu te trouves actuellement.
+ pour l'envoyer au depot distant :     git push --set-upstream origin premiere-branche puis git push
+
+ git branch affiche les branches
+
+ Après avoir créé la branche, tu peux basculer vers celle-ci avec la commande :
+git checkout premiere-branche ou
+git swich premiere-branche 
+
+affiche toutes les branches de ton dépôt Git, à la fois locales et distantes. Cela te permet de voir quelles branches existent non seulement dans ton dépôt local, mais aussi celles qui existent sur le dépôt distant
+ -->
+<!-- 
+Pour fusionner deux branches dans Git,il faut se placer sur la branche dans laquelle tu souhaites appliquer les modifications 
+git checkout master
+puis utilises la commande git merge plus le nom de la branche 
+
+git push origin master  pour pousser les modifications vers le dépôt distant
+
+-->
+gitignore 
+  </nouvelle>
+</file>

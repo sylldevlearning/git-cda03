@@ -1,0 +1,169 @@
+<!-- 1    Créer un compte GitHub et configurer votre profil
+2    Créer un nouveau repository dans GitHub
+3    Cloner un repository existant sur votre ordinateur
+4    Créer une nouvelle branche dans votre repository local
+5    Effectuer des modifications dans votre branche locale
+6    Commiter vos modifications dans votre branche locale
+7    Pousser vos modifications vers votre repository sur GitHub
+8    Ouvrir une pull request pour fusionner votre branche avec la branche principaleque des modifications.
+9    Examiner et discuter des changements proposés dans une pull request
+10   Fusionner une pull request avec la branche principale
+11   Mettre à jour votre branche locale pour refléter les modifications apportées à la branche principale
+12   Réinitialiser vos modifications locales à partir de la dernière version de la branche principale
+13   Utiliser les commandes Git pour afficher l'historique des commits
+14   Utiliser les commandes Git pour annuler un commit
+15   Utiliser les commandes Git pour modifier un commit
+16   Utiliser les commandes Git pour supprimer une branche locale
+17   Utiliser les commandes Git pour fusionner deux branches
+18   Utiliser les commandes Git pour rebaser une branche sur une autre branche
+19   Utiliser les commandes Git pour récupérer des modifications d'une branche distante
+20   Utiliser les commandes Git pour gérer les conflits de fusion
+21   Configurer les paramètres de Git pour votre environnement de développement
+22   Utiliser les commandes Git pour ignorer des fichiers ou des répertoires
+23   Utiliser les commandes Git pour taguer des versions
+24   Utiliser les commandes Git pour collaborer avec d'autres développeurs sur un repository dans votre dépôt local.
+25   Utiliser les commandes Git pour gérer les sous-modules
+26   Utiliser les commandes Git pour supprimer des fichiers et des répertoires
+27   Utiliser les commandes Git pour restaurer des fichiers et des répertoires
+28   Utiliser les commandes Git pour trouver et corriger des bugs
+29   Utiliser les commandes Git pour créer des branches en fonction de fonctionnalités ou de correctifs des branches.
+30   Utiliser les commandes Git pour gérer les versions de votre code -->
+
+
+<!-- 
+    1    Créer un compte GitHub et configurer votre profil
+1  Pour créer un compte GitHub, rendez-vous sur le site https://github.com et cliquez sur le bouton "Sign up". Suivez les étapes pour créer votre compte et configurez votre profil en ajoutant une photo, une biographie et des informations supplémentaires.
+
+2    Créer un nouveau repository dans GitHub
+2  Pour créer un nouveau repository dans GitHub, cliquez sur le bouton "New" dans la page principale de votre compte. Donnez un nom à votre repository, ajoutez une description et choisissez les options de visibilité et de licence que vous souhaitez.
+
+3    Cloner un repository existant sur votre ordinateur
+3  Pour cloner un repository existant sur votre ordinateur, utilisez la commande "git clone" suivie de l'URL du repository. Par exemple, si vous voulez cloner le repository "mon-repository" sur GitHub, tapez "git clone https://github.com/mon-nom-d'utilisateur/mon-repository.git" dans votre terminal.
+
+4    Créer une nouvelle branche dans votre repository local
+4  Pour créer une nouvelle branche dans votre repository local, utilisez la commande "git checkout -b" suivie du nom de votre nouvelle branche. Par exemple, si vous voulez créer une nouvelle branche appelée "ma-branche", tapez "git checkout -b ma-branche" dans votre terminal.
+
+
+5    Effectuer des modifications dans votre branche locale
+5  Pour effectuer des modifications dans votre branche locale, ouvrez le fichier que vous souhaitez modifier avec votre éditeur de texte préféré et effectuez vos modifications.
+
+6    Commiter vos modifications dans votre branche locale
+6  Pour commiter vos modifications dans votre branche locale, utilisez la commande "git commit -m" suivie d'un message descriptif de vos modifications. Par exemple, si vous avez modifié le fichier "index.html", tapez "git commit -m 'Modifié le fichier index.html'" dans votre terminal.
+
+
+7    Pousser vos modifications vers votre repository sur GitHub
+7  Pour pousser vos modifications vers votre repository sur GitHub, utilisez la commande "git push" suivie du nom de votre branche. Par exemple, si vous voulez pousser vos modifications de la branche "ma-branche" vers votre repository sur GitHub, tapez "git push origin ma-branche" dans votre terminal.
+
+8    Ouvrir une pull request pour fusionner votre branche avec la branche principaleque des modifications.
+8  Pour ouvrir une pull request pour fusionner votre branche avec la branche principale, allez sur la page de votre repository sur GitHub, sélectionnez votre branche dans le menu déroulant "Branch" et cliquez sur le bouton "New pull request". Ajoutez une description détaillée de vos modifications et cliquez sur le bouton "Create pull request".
+
+9    Examiner et discuter des changements proposés dans une pull request
+9  Pour examiner et discuter des changements proposés dans une pull request, allez sur la page de la pull request sur GitHub, lisez les commentaires et les discussions et répondez aux questions ou aux préoccupations.
+
+10   Fusionner une pull request avec la branche principale
+10 Pour fusionner une pull request avec la branche principale, cliquez sur le bouton "Merge pull request" sur la page de la pull request. Confirmez la fusion en cliquant sur le bouton "Confirm merge".
+
+11   Mettre à jour votre branche locale pour refléter les modifications apportées à la branche principale
+11 Pour mettre à jour votre branche locale pour refléter les modifications apportées à la branche principale, utilisez la commande "git pull" suivie du nom de la branche principale. Par exemple, si la branche principale s'appelle "master", tapez "git pull origin master" dans votre terminal.
+
+12   Réinitialiser vos modifications locales à partir de la dernière version de la branche principale
+12 Pour réinitialiser vos modifications locales à partir de la dernière version de la branche principale, utilisez la commande "git reset --hard" suivie du nom de la branche principale
+
+13   Utiliser les commandes Git pour afficher l'historique des commits
+13 Pour annuler un commit précédent, utilisez la commande "git revert" suivie du numéro de commit que vous souhaitez annuler. Par exemple, si vous voulez annuler le commit numéro 123456, tapez "git revert 123456" dans votre terminal.
+
+14   Utiliser les commandes Git pour annuler un commit
+14 Pour annuler tous les commits qui n'ont pas encore été poussés vers le repository distant, utilisez la commande "git reset --hard origin/" suivie du nom de votre branche. Par exemple, si vous êtes sur la branche "ma-branche", tapez "git reset --hard origin/ma-branche" dans votre terminal.
+
+15   Utiliser les commandes Git pour modifier un commit
+15 Pour voir les différences entre deux branches, utilisez la commande "git diff" suivie des noms de vos deux branches. Par exemple, si vous voulez voir les différences entre la branche "ma-branche" et la branche "master", tapez "git diff ma-branche master" dans votre terminal.
+
+16   Utiliser les commandes Git pour supprimer une branche locale
+16 Pour voir l'historique des commits dans une branche, utilisez la commande "git log". Cette commande affichera tous les commits de la branche, avec les informations de l'auteur, la date et l'heure du commit et le message de commit associé.
+
+17   Utiliser les commandes Git pour fusionner deux branches
+17 Pour créer une étiquette dans votre repository, utilisez la commande "git tag" suivie du nom de l'étiquette. Par exemple, si vous voulez créer une étiquette appelée "v1.0", tapez "git tag v1.0" dans votre terminal.
+
+18   Utiliser les commandes Git pour rebaser une branche sur une autre branche
+18 Pour pousser une étiquette vers le repository distant, utilisez la commande "git push --tags". Cette commande poussera toutes les étiquettes que vous avez créées vers le repository distant.
+
+19   Utiliser les commandes Git pour récupérer des modifications d'une branche distante
+19 Pour supprimer une branche locale, utilisez la commande "git branch -d" suivie du nom de la branche. Par exemple, si vous voulez supprimer la branche "ma-branche", tapez "git branch -d ma-branche" dans votre terminal.
+
+20   Utiliser les commandes Git pour gérer les conflits de fusion
+20 Pour supprimer une branche distante, utilisez la commande "git push origin --delete" suivie du nom de la branche. Par exemple, si vous voulez supprimer la branche "ma-branche" sur le repository distant, tapez "git push origin --delete ma-branche" dans votre terminal.
+
+21   Configurer les paramètres de Git pour votre environnement de développement
+21 Pour résoudre un conflit de fusion, ouvrez le fichier en conflit dans votre éditeur de texte préféré et résolvez le conflit manuellement en supprimant les lignes en conflit et en choisissant les modifications à conserver. Ensuite, commitez les modifications résolues.
+
+22   Utiliser les commandes Git pour ignorer des fichiers ou des répertoires
+22 Pour synchroniser votre repository local avec le repository distant, utilisez la commande "git fetch". Cette commande récupérera toutes les modifications apportées au repository distant depuis votre dernière synchronisation.
+
+23   Utiliser les commandes Git pour taguer des versions
+23 Pour créer un fichier .gitignore, créez un fichier nommé ".gitignore" à la racine de votre repository et ajoutez-y les noms de fichiers ou de dossiers que vous souhaitez ignorer lors des commits.
+
+24   Utiliser les commandes Git pour collaborer avec d'autres développeurs sur un repository dans votre dépôt local
+24 Pour créer une branche à partir d'un commit précédent, utilisez la commande "git branch" suivie du numéro de commit et du nom de votre nouvelle branche. Par exemple, si vous voulez créer une nouvelle branche appelée "ma-branche" à partir du commit numéro 123456, tapez "git branch ma-branche 123456" dans votre terminal.
+
+25   Utiliser les commandes Git pour gérer les sous-modules
+25 Pour fusionner deux branches, utilisez la commande "git merge" suivie du nom de la branche que vous voulez fusionner dans la branche courante. Par exemple, si vous voulez fusionner la branche "ma-branche" dans la branche courante, tapez "git merge ma-branche" dans votre terminal.
+
+26   Utiliser les commandes Git pour supprimer des fichiers et des répertoires
+26 Pour créer une nouvelle branche et vous y déplacer immédiatement, utilisez la commande "git checkout -b" suivie du nom de votre nouvelle branche. Par exemple, si vous voulez créer une nouvelle branche appelée "ma-branche" et vous y déplacer immédiatement, tapez "git checkout -b ma-branche" dans votre terminal.
+
+27   Utiliser les commandes Git pour restaurer des fichiers et des répertoires
+27 Pour renommer une branche, utilisez la commande "git branch -m" suivie du nouveau nom de la branche. Par exemple, si vous voulez renommer la branche "ancien-nom" en "nouveau-nom", tapez "git branch -m ancien-nom nouveau-nom" dans votre terminal.
+
+28   Utiliser les commandes Git pour trouver et corriger des bugs
+28 Pour supprimer un fichier suivi par Git, utilisez la commande "git rm" suivie du nom du fichier. Par exemple, si vous voulez supprimer le fichier "mon-fichier.txt", tapez "git rm mon-fichier.txt" dans votre terminal.
+
+29   Utiliser les commandes Git pour créer des branches en fonction de fonctionnalités ou de correctifs des branches.
+29 Pour défaire les modifications non validées d'un fichier, utilisez la commande "git checkout" suivie du nom du fichier. Par exemple, si vous avez apporté des modifications au fichier "mon-fichier.txt" mais que vous voulez revenir à la version précédente non modifiée, tapez "git checkout mon-fichier.txt" dans votre terminal.
+
+30   Utiliser les commandes Git pour gérer les versions de votre code
+30 Pour configurer les informations de votre compte Git, utilisez la commande "git config" suivie du nom de l'option et de la valeur que vous voulez configurer. Par exemple, si vous voulez configurer votre nom d'utilisateur, tapez "git config --global user.name 'Votre Nom'" dans votre terminal.
+-->
+
+<!-- 1 Créer un nouveau dépôt Git en utilisant la commande git init. -->
+
+<!-- 2 Ajouter un fichier au dépôt en utilisant la commande git add. -->
+
+
+<!-- 3 Vérifier l'état du dépôt en utilisant la commande git status. -->
+
+<!-- 4 Effectuer un commit en utilisant la commande git commit. -->
+
+<!-- 5 Ajouter un deuxième fichier et effectuer un commit. -->
+
+<!-- 5 Ajouter un troisième fichier et effectuer un commit. -->
+
+<!-- 6 Vérifier l'historique des commits en utilisant la commande git log. -->
+
+<!-- 7 Créer une nouvelle branche en utilisant la commande git branch. -->
+
+<!-- 8 Basculer sur la nouvelle branche en utilisant la commande git checkout. -->
+
+<!-- 9 Modifier un fichier et effectuer un commit sur la nouvelle branche. -->
+
+<!-- 10 Basculer sur la branche principale en utilisant la commande git checkout. -->
+
+<!-- 11 Fusionner la branche de travail dans la branche principale en utilisant la commande git merge. -->
+
+<!-- 12 Modifier un fichier sur la branche principale et effectuer un commit. -->
+
+<!-- 13 Supprimer un fichier en utilisant la commande git rm. -->
+
+<!-- 14 Renommer un fichier en utilisant la commande git mv. -->
+
+<!-- 15 Cloner un dépôt Git distant en utilisant la commande git clone. -->
+
+<!-- 16 Mettre à jour le dépôt local avec les modifications du dépôt distant en utilisant la commande git pull. -->
+
+<!-- 17 Envoyer les modifications locales au dépôt distant en utilisant la commande git push. -->
+
+<!-- 18 utiliser la commande git remote add origin pour ajouter un référentiel distant  -->
+
+<!-- 19 envoyer les modifications locales au dépôt distant en utilisant la commande git push -->
+
+<!-- 20 Ignorer un fichier en créant un fichier .gitignore contenant le nom du fichier ou du dossier à ignorer. -->
+
